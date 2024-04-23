@@ -16,6 +16,7 @@ def test_exact_grade_boundaries():
 # TODO-2: Add test_invalid_numerical_score() function
 def test_invalid_numerical_score():
     convert_to_letter_grade(score=-1)
+    
     convert_to_letter_grade(score=101)
 
 # TODO-3: Add test_non_numeric_input() function
@@ -24,12 +25,9 @@ def test_non_numeric_input():
     list = [1, 2, 3]
     n = None
 
-    if (convert_to_letter_grade(str) == TypeError("Score must be a numeric value.")):
-        print(convert_to_letter_grade(str))
+    convert_to_letter_grade(str)
 
-    if (convert_to_letter_grade(list) == TypeError("Score must be a numeric value.")):
-        print(convert_to_letter_grade(list))
+    convert_to_letter_grade(list)
 
-    if (convert_to_letter_grade(n) == TypeError("Score must be a numeric value.")):
-        print(convert_to_letter_grade(n))
+    convert_to_letter_grade(n)
 
