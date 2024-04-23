@@ -15,11 +15,8 @@ def test_exact_grade_boundaries():
 
 # TODO-2: Add test_invalid_numerical_score() function
 def test_invalid_numerical_score():
-    if (convert_to_letter_grade(score=-1) == ValueError("Score must be between 0 and 100.")):
-        print(convert_to_letter_grade(score=-1))
-    
-    if (convert_to_letter_grade(score=101) == ValueError("Score must be between 0 and 100.")):
-        print(convert_to_letter_grade(score=101))
+    convert_to_letter_grade(score=-1)
+    convert_to_letter_grade(score=101)
 
 # TODO-3: Add test_non_numeric_input() function
 def test_non_numeric_input():
